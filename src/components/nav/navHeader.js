@@ -34,6 +34,7 @@ class NavHeader extends React.PureComponent {
                 </div>
                 <nav className="hdr-btn-wrapper">
                     <div className="hdr-btns">
+                        <Link className={`hdr-btn ${path === '/community' && 'active'}`} to="/community">Community</Link>
                         <Link className={`hdr-btn ${path === '/governors' && 'active'}`} to="/governors">Governors</Link>
                         <Link className={`hdr-btn ${path === '/states' && 'active'}`} to="/states">States</Link>
                         <Link className={`hdr-btn ${path === '/representatives' && 'active'}`} to="/representatives">Representatives</Link>

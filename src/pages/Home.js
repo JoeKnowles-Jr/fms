@@ -107,7 +107,7 @@ class Home extends PureComponent {
                 }
                 {!this.props.user && this.props.senators && <Landing news={this.props.news} senators={this.props.senators} />}
             </HomeWrapper>
-        );
+        )
     }
 }
 
@@ -117,7 +117,7 @@ const HomeWrapper = styled.div`
     width: 99%;
     position: relative;
     transition: all 1s ease;
-`;
+`
 
 const mapStateToProps = (state) => {
     return {
@@ -129,4 +129,4 @@ const mapStateToProps = (state) => {
     }
 }
 
-export default connect(mapStateToProps, actions)(Home);
+export default connect(mapStateToProps, actions)(Home)
