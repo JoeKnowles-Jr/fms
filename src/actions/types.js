@@ -1,0 +1,19 @@
+export const AUTH_USER = 'auth_user'
+export const UNAUTH_USER = 'unauth_user'
+export const AUTH_ERROR = 'auth_error'
+export const GET_SENATORS_SUCCESS = "get_senators_success"
+export const CREATE_SENATOR_SUCCESS = "create_senator_success"
+export const GET_GOVERNORS_SUCCESS = "get_governors_success"
+export const CREATE_GOVERNOR_SUCCESS = "create_governor_success"
+export const GET_REPRESENTATIVES_SUCCESS = "get_representatives_success"
+export const CREATE_REPRESENTATIVE_SUCCESS = "create_representative_success"
+export const GET_STATES_SUCCESS = "get_states_success"
+export const CREATE_STATE_SUCCESS = "create_state_success"
+export const UPDATE_SENATOR = "update_senator"
+export const CREATE_COMMENT = "create_comment"
+export const GET_COMMENTS = "get_comments"
+export const UPDATE_COMMENT = "update_comment"
+export const DELETE_COMMENT = "delete_comment"
+export const SET_DISPLAY = "set_display"
+export const SET_MESSAGE = "set_message"
+
