@@ -34,7 +34,7 @@ const Senators = () => {
 }
 
 const SenatorsWrapper = styled.div`
-    margin-top: 5rem;
+    margin-top: 1rem;
     width: 100%;
     position: relative;
 `

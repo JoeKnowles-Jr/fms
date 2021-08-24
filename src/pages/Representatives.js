@@ -26,8 +26,8 @@ const Representatives = () => {
 }
 
 const RepresentativesWrapper = styled.div`
-    margin-top: 5rem;
-    width: 100vw;
+    margin-top: 2rem;
+    width: 100%;
     position: relative;
 `
 

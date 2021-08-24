@@ -29,49 +29,34 @@ export const Landing = ({ senators, news }) => {
 
     return (
         <LandingWrapper>
-            <GridWrapper>
-                <SenatorLeft>
+            <div className='grid-wrapper'>
+                <div>
                     {senators && <SenatorList clicked={senatorClicked} senators={getDemocrats()} />}
-                </SenatorLeft>
-                <CenterContent>
+                </div>
+                <div className='center-content'>
                     {!news && <div>News feeds coming soon!</div>}
                     {news && <div>News feeds coming soon!</div>}
-                </CenterContent>
-                <SenatorRight>
+                </div>
+                <div>
                     {senators && <SenatorList clicked={senatorClicked} senators={getRepublicans()} />}
-                </SenatorRight>
-            </GridWrapper>
+                </div>
+            </div>
         </LandingWrapper>
     )
 }
 
-const CenterContent = styled.div`
-    background-color: #ddd;
-    width: 100%;
-`
-
-const SenatorLeft = styled.div`
-    background-color: #aaa;
-`
-
-const SenatorRight = styled.div`
-    background-color: #aaa;
-`
-
-const GridWrapper = styled.div`
-    width: 100%;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 30vw 40vw 30vw;
-    row-gap: 2rem;
-    justify-content: space-around;
-    align-items: space-around;
-`
-
 const LandingWrapper = styled.div`
-    margin-top: 3rem;
     width: 100%;
     position: relative;
+    .grid-wrapper {
+        width: 100%;
+        min-height: 80vh;
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        .center-content {
+            width: 100%;
+        }
+    }
 `
 
 export default Landing
