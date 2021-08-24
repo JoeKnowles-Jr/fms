@@ -5,7 +5,7 @@ export const Loading = () => {
 
     return (
         <LoadingWrapper>
-
+            Loading...
         </LoadingWrapper>
     )
 }

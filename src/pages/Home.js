@@ -113,7 +113,6 @@ class Home extends PureComponent {
 
 const HomeWrapper = styled.div`
     opacity: 0;
-    margin-top: 3rem;
     width: 99%;
     position: relative;
     transition: all 1s ease;

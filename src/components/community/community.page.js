@@ -1,15 +1,22 @@
 import React from 'react'
+import styled from 'styled-components'
+import { connect } from 'react-redux'
+import * as actions from '../../actions'
 
 class CommunityPage extends React.PureComponent {
 
     render() {
         return (
-            <div>
-
-            </div>
+            <CommunityWrapper>
+                Community
+            </CommunityWrapper>
         )
     }
 }
+
+const CommunityWrapper = styled.div`
+
+`;
 
 const mapStateToProps = (state) => {
     return {

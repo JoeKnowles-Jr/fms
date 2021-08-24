@@ -22,7 +22,7 @@ const MainContent = styled.div`
   width: 100%;
   flex-grow: 1;
   flex-shrink: 0;
-  margin-top: 1.5rem;
+  margin-top: 4rem;
   margin-bottom: 1.5rem;
 `
 

@@ -42,7 +42,7 @@ const States = () => {
 }
 
 const StatesWrapper = styled.div`
-    margin-top: 5rem;
+    margin-top: 3rem;
     width: 100%;
     position: relative;
 `
