@@ -16,14 +16,14 @@ export const Routes = () => {
     return (
         <App>
             <RouteWrapper>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/" render={(props) => <Home {...props} />} />
                 <Route exact path="/auth" render={(props) => <Auth {...props} />} />
                 <Route exact path="/senators" render={(props) => <Senators {...props} />} />
                 <Route exact path="/representatives" component={Representatives} />
                 <Route exact path="/governors" component={Governors} />
                 <Route exact path="/community" component={Community} />
                 <Route exact path="/states" component={States} />
-                <Route exact path="/signout" component={Signout} />
+                <Route exact path="/signout" render={(props) => <Signout {...props} />} />
             </RouteWrapper>
         </App>
     )

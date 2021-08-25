@@ -4,6 +4,7 @@ import { reducer as senatorReducer } from './senators.reducer'
 import { reducer as representativeReducer } from './representatives.reducer'
 import { reducer as governorReducer } from './governors.reducer'
 import { reducer as stateReducer } from './states.reducer'
+import { reducer as commentReducer } from './comments.reducer'
 import { reducer as formReducer } from 'redux-form'
 
 const rootReducer = combineReducers({
@@ -12,7 +13,8 @@ const rootReducer = combineReducers({
     senators: senatorReducer,
     representatives: representativeReducer,
     governors: governorReducer,
-    states: stateReducer
+    states: stateReducer,
+    comments: commentReducer
 })
 
 export default rootReducer
