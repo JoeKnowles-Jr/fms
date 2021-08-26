@@ -28,15 +28,6 @@ export const GovernorPage = ({ democrats, republicans }) => {
     );
 }
 
-
-
-const GridWrapper = styled.div`
-    width: 100%;
-    min-height: 80vh;
-    display: grid;
-    grid-template-columns: 35% 30% 35%;
-`;
-
 const GovernorPageWrapper = styled.div`
     /* margin-top: 3rem; */
     width: 100%;

@@ -21,8 +21,8 @@ class Home extends PureComponent {
         if (!this.props.states) {
             this.props.getStates('all');
         }
-        if (!this.props.comments) {
-            this.props.getComments();
+        if (!this.props.communities) {
+            this.props.getCommunities();
         }
         document.getElementById('baseview').style.opacity = 1
     }
@@ -128,7 +128,7 @@ const mapStateToProps = (state) => {
         governors: state.governors.governors,
         states: state.states.states,
         user: state.auth.user,
-        comments: state.comments.comments
+        communities: state.comments.communities
     }
 }
 

@@ -18,12 +18,12 @@ const Senators = () => {
         filterByState(userState, user, senators, setFiltered)
     }, [userState, senators])
 
-    const senatorClicked = async (name) => {
+    // const senatorClicked = async (name) => {
         // const newNews = getDataNews(name)
         // console.log(newNews)
         // this.setState((state) => {news: newNews})
-        console.log("Senator clicked!")
-    }
+    //     console.log("Senator clicked!")
+    // }
 
     return (
         <SenatorsWrapper>

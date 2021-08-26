@@ -18,7 +18,7 @@ class NavHeader extends React.PureComponent {
                                 <span className="userstate"> ({this.props.userState}) </span>
                             </span>
                             <Link to='/profile'>
-                                <img src={gear} />
+                                <img src={gear} alt='profile' />
                             </Link>
                         </span>
                         :
@@ -89,16 +89,6 @@ const NavHeaderWrapper = styled.div`
         @media (max-width: 1240px) {
             font-size: 1.25rem;
         }
-        img {
-            margin-left: 1rem;
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            @media (max-width: 768px) {
-                width: 32px;
-                height: 32px;
-            }
-        }
         .liu {
             font-size: 1rem;
         }
@@ -133,9 +123,10 @@ const NavHeaderWrapper = styled.div`
         a>img {
             width: 16px;
             height: 16px;
+            margin-left: 1rem;
         }
     }
-
+    
     .banner {
         a { 
             text-decoration: none;

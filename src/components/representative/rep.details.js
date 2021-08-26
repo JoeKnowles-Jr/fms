@@ -2,14 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const RepresentativeDetails = ({ clicked, extended, representative }) => {
-
-    const handleClick = () => {
-        console.log('handleClick')
-        clicked({
-            first: representative.first_name,
-            last: representative.last_name
-        })
-    }
     
     if (!representative) return (
         <NoData>
@@ -38,39 +30,6 @@ const RepresentativeDetails = ({ clicked, extended, representative }) => {
         </RepresentativeWrapper>
     )
 }
-
-const BaseRepresentative = styled.div`
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.1rem;
-    .top {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 1rem;
-    }
-    /* .bio {
-        height: 30%;
-        overflow-y: scroll;
-    } */
-`;
-
-const Republican = styled(BaseRepresentative)`
-    background-color: rgba(255, 0, 0, 0.5);
-    text-align: right;
-`;
-
-const Independent = styled(BaseRepresentative)`
-    background-color: rgba(255, 255, 0, 0.5);
-    text-align: center;
-`;
-
-const Democrat = styled(BaseRepresentative)`
-    background-color: rgba(0, 0, 255, 0.5);
-    text-align: left;
-`;
 
 const NoData = styled.div`
     padding: 2rem;

@@ -2,6 +2,7 @@ import axios from 'axios'
 import { commentUrl } from './action.urls'
 import {
     GET_COMMENTS_SUCCESS,
+    GET_COMMUNITIES_SUCCESS,
     CREATE_COMMENT_SUCCESS,
     UPDATE_COMMENT_SUCCESS
 } from './types'
@@ -11,6 +12,17 @@ export const getComments = () => {
         axios.get(commentUrl)
         .then(response => {
                 dispatch({ type: GET_COMMENTS_SUCCESS, payload: { comments: response.data.comments } })
+            }).catch(() => {
+                console.log('Comments error!')
+            })
+    }
+}
+
+export const getCommunities = () => {
+    return (dispatch) => {
+        axios.get(`${commentUrl}/communities`)
+            .then(response => {
+                dispatch({ type: GET_COMMUNITIES_SUCCESS, payload: { communities: response.data.communities } })
             }).catch(() => {
                 console.log('Comments error!')
             })

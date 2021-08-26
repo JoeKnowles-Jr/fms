@@ -35,13 +35,13 @@ const StateDetails = ({ state }) => {
                         <p>Capital: <a href={state.capital_url} target='_blank'>{state.capital_city}</a></p>
                     </div>
                     <div className='mapimage'>
-                        <img width='75%' src={state.map_image_url} />
+                        <img width='75%' src={state.map_image_url} alt='state map' />
                     </div>
                 </div>
                 <div className='middle'>
                     <div className='flag'>
-                        <img width='25%' src={state.state_flag_url} />
-                        <img width='15%' src={state.state_seal_url} />
+                        <img width='25%' src={state.state_flag_url} alt='state flag' />
+                        <img width='15%' src={state.state_seal_url} alt='state seal' />
                     </div>
                     <div className='links'>
                         <a href={state.constitution_url}>
